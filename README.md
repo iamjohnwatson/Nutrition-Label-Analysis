@@ -1,6 +1,6 @@
 # US vs UK Nutrition Label Analysis
 
-Welcome to the **US vs UK Nutrition Label Analysis** project! This interactive webpage compares the nutritional labeling standards of the United States and the United Kingdom, highlighting their design, structure, and consumer accessibility. Created by Akash Sriram, this project leverages modern web technologies to provide an engaging and educational experience.
+Welcome to the **US vs UK Nutrition Label Analysis** project! This interactive webpage compares the nutritional labeling standards of the United States and the United Kingdom, highlighting their design, structure, and consumer accessibility. Created by Akash Sriram, this project leverages modern web technologies to provide an engaging and educational experience. The labels were recreated on Adobe Illustrator to see how meticulously designers make food labels and experience the amount of thought and effort that goes into it.
 
 ## Project Overview
 
