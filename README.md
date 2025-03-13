@@ -37,5 +37,5 @@ The webpage includes interactive elements, animations, and a theme toggle to enh
 ### Installation
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
-   cd us-vs-uk-nutrition-label-analysis
+   git clone github.com/iamjohnwatson/Nutrition-Label-Analysis
+   cd Nutrition-Label-Analysis
