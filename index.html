@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>US vs UK Nutrition Label Analysis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+  <header role="banner">
+    <h1>US vs UK Nutrition Label Analysis</h1>
+    <p class="byline">By Akash Sriram</p>
+    <button id="theme-toggle" aria-label="Toggle theme">
+      <svg class="theme-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+    </button>
+  </header>
+  <div class="background-accents"></div>
+  <main role="main" class="main-container">
+    <div class="comparison-grid">
+      <!-- US Section -->
+      <section class="label-section us-section" aria-label="US Nutrition Label Overview">
+        <h2 class="section-title">US Nutrition Label Overview</h2>
+        <div class="label-wrapper">
+          <div class="label-container">
+            <img src="us-label.png" alt="US Nutrition Label" class="label us-label">
+            <div class="icon-column">
+              <div class="icon-wrapper"><img src="us-serving-icon-02.png" alt="Serving Icon" class="icon-button" data-target="us-serving-text" data-tooltip="Serving Size Info"></div>
+              <div class="icon-wrapper"><img src="us-calories-icon-02.png" alt="Calories Icon" class="icon-button" data-target="us-calories-text" data-tooltip="Calorie Info"></div>
+              <div class="icon-wrapper"><img src="us-dv-icon-02.png" alt="DV Icon" class="icon-button" data-target="us-dv-text" data-tooltip="Daily Values Info"></div>
+              <div class="icon-wrapper"><img src="us-sugars-icon-02.png" alt="Sugars Icon" class="icon-button" data-target="us-sugars-text" data-tooltip="Sugars & Nutrients Info"></div>
+              <div class="icon-wrapper"><img src="us-vitamins-icon-02.png" alt="Vitamins Icon" class="icon-button" data-target="us-vitamins-text" data-tooltip="Vitamins & Minerals Info"></div>
+            </div>
+          </div>
+        </div>
+        <div class="text-container">
+          <p class="introduction">
+            The US nutrition label is meticulously designed for clarity and visual hierarchy, adhering to FDA guidelines with a structured typographic approach. The title "Nutrition Facts" is rendered in Helvetica Regular with an 8-point leading, featuring "Nutrition" in a larger size and "Facts" in smaller, italicized text for a balanced look. Serving size and calorie information are delineated by 3-point and 7-point rules, respectively, directing the reader’s eye effectively. Percent Daily Values are set in Franklin Gothic Heavy at a minimum of 12 points, framed by a 1/2-point rule, while Helvetica Black highlights key data, ensuring a precise and readable layout that enhances consumer understanding.
+          </p>
+          <div id="us-serving-text" class="text-section"><span class="inactive-icon"><img src="us-serving-icon-02.png" alt="Serving Icon"></span>The serving size on the US label is prominently displayed in a bold, large font, such as "1/3 cup (55g)" for 8 servings per container, reflecting updated standards to help consumers easily identify a single portion and its nutritional impact.</div>
+          <div id="us-calories-text" class="text-section"><span class="inactive-icon"><img src="us-calories-icon-02.png" alt="Calories Icon"></span>Calories are a focal point, presented in an oversized, bold font like "240" under "Amount per serving," separated by a bold line, enabling quick recognition for dietary planning.</div>
+          <div id="us-dv-text" class="text-section"><span class="inactive-icon"><img src="us-dv-icon-02.png" alt="DV Icon"></span>Updated Daily Values (% DV) align with current science, displayed in a clear two-column format (e.g., total fat 10%, sodium 7%), with a footnote tying them to a 2,000-calorie diet for straightforward nutrient assessment.</div>
+          <div id="us-sugars-text" class="text-section"><span class="inactive-icon"><img src="us-sugars-icon-02.png" alt="Sugars Icon"></span>The label now requires reporting of added sugars, vitamin D, and potassium, showing "Total Sugars 12g, including 10g Added Sugars (20% DV)" alongside vitamin D (2mcg, 10% DV) and potassium (240mg, 6% DV) for a comprehensive health overview.</div>
+          <div id="us-vitamins-text" class="text-section"><span class="inactive-icon"><img src="us-vitamins-icon-02.png" alt="Vitamins Icon"></span>Essential nutrients like vitamin D, calcium, iron, and potassium are mandated, with values such as iron (8mg, 45% DV) and vitamin A (2mcg, 20% DV) listed, providing a detailed nutritional profile.</div>
+        </div>
+      </section>
+
+      <!-- UK Section -->
+      <section class="label-section uk-section" aria-label="UK Nutrition Label Overview">
+        <h2 class="section-title">UK Nutrition Label Overview</h2>
+        <div class="label-wrapper">
+          <div class="label-container">
+            <div class="icon-column">
+              <div class="icon-wrapper"><img src="uk-energy-icon-02.png" alt="Energy Icon" class="icon-button" data-target="uk-energy-text" data-tooltip="Energy Info"></div>
+              <div class="icon-wrapper"><img src="uk-saturates-icon-02.png" alt="Saturates Icon" class="icon-button" data-target="uk-saturates-text" data-tooltip="Saturates Info"></div>
+              <div class="icon-wrapper"><img src="uk-fat-icon-02.png" alt="Fat Icon" class="icon-button" data-target="uk-fat-text" data-tooltip="Fat Info"></div>
+              <div class="icon-wrapper"><img src="uk-sugars-icon-02.png" alt="Sugars Icon" class="icon-button" data-target="uk-sugars-text" data-tooltip="Sugars Info"></div>
+              <div class="icon-wrapper"><img src="uk-salt-icon-02.png" alt="Salt Icon" class="icon-button" data-target="uk-salt-text" data-tooltip="Salt Info"></div>
+            </div>
+            <img src="uk-label.png" alt="UK Nutrition Label" class="label uk-label">
+          </div>
+        </div>
+        <div class="text-container">
+          <p class="introduction">
+            The UK nutrition label prioritizes accessibility and consumer choice with a flexible, functional design, diverging from the US’s rigid typographic standards. Unlike the US, which specifies fonts like Helvetica and Franklin Gothic with precise sizes (e.g., 8-point leading), the UK follows EU Regulation 1169/2011, mandating only a minimum font size for key data while allowing font variety for readability. A standout feature is the voluntary traffic light system, using red, amber, and green indicators for fat, saturated fat, sugars, and salt on the front of pack, offering a visual shortcut absent in the US’s text-heavy, calorie-focused design.
+          </p>
+          <div id="uk-energy-text" class="text-section"><span class="inactive-icon"><img src="uk-energy-icon-02.png" alt="Energy Icon"></span>The UK label provides serving size data per 100g or 100ml as the primary reference (e.g., "200kJ / 48kcal per 100g"), with per-portion details optional, enabling uniform product comparisons unlike the US’s bold, serving-specific approach.</div>
+          <div id="uk-saturates-text" class="text-section"><span class="inactive-icon"><img src="uk-saturates-icon-02.png" alt="Saturates Icon"></span>Energy is displayed in both kilojoules and kilocalories per 100g (e.g., "1979kJ / 473kcal"), offering a dual-unit system for international alignment, contrasting with the US’s singular, prominent calorie focus.</div>
+          <div id="uk-fat-text" class="text-section"><span class="inactive-icon"><img src="uk-fat-icon-02.png" alt="Fat Icon"></span>The UK requires energy, fat, saturated fat, carbohydrates, sugars, protein, and salt per 100g (e.g., fat 17.4g, salt 0.9g), omitting % Daily Values unless voluntary, favoring raw data over the US’s interpreted % DV format.</div>
+          <div id="uk-sugars-text" class="text-section"><span class="inactive-icon"><img src="uk-sugars-icon-02.png" alt="Sugars Icon"></span>The voluntary traffic light system highlights added sugars and fats with color codes (e.g., red for high sugars at 34g), differing from the US’s text-based "10g Added Sugars (20% DV)" approach.</div>
+          <div id="uk-salt-text" class="text-section"><span class="inactive-icon"><img src="uk-salt-icon-02.png" alt="Salt Icon"></span>The traffic light system rates salt (e.g., 0.9g, 15% RI, amber) visually, providing a quick health cue, unlike the US’s detailed nutrient list without color coding.</div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer role="contentinfo">
+    <p>© 2025 Akash Sriram. Tools: Adobe Illustrator, JavaScript, CSS, HTML</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
