@@ -22,11 +22,11 @@ body.dark-theme {
   height: 100%;
   pointer-events: none;
   z-index: -1;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><polygon points="100,10 40,198 190,78 10,78 160,198" fill="rgba(44, 62, 80, 0.05)" /></svg>') repeat; /* Light theme default */
+  background: url('background-light.png') repeat;
 }
 
 body.dark-theme .background-accents {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><polygon points="100,10 40,198 190,78 10,78 160,198" fill="rgba(255, 255, 255, 0.05)" /></svg>') repeat; /* Dark theme */
+background: url('background-dark.png') repeat;
 }
 
 header {
